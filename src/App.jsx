@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Banner from "./components/Banner";
+import BannerControls from "./components/BannerControls";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [bannerStyle, setBannerStyle] = useState({
+    backgroundColor: "bg-blue-600",
+    title: "I love programming",
+    subText: "The joy of creating something from nothing and solving complex problems keeps me motivated every day.",
+    bannerImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    isImageUploaded: false,
+  });
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen w-full">
+      <Banner {...bannerStyle} />
+      <div className="container mx-auto px-4 py-8 max-w-3xl">
+        <BannerControls onStyleChange={setBannerStyle} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
