@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -64,5 +66,56 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@layer components {
+  .form-input {
+    @apply w-full px-4 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent transition duration-200 ease-in-out;
+  }
+
+  .form-label {
+    @apply block mb-2 text-sm font-medium text-gray-700 dark:text-gray-200;
+  }
+
+  .form-group {
+    @apply mb-6;
+  }
+
+  .color-input {
+    @apply h-12 p-1 rounded-lg cursor-pointer bg-transparent;
+  }
+
+  .color-input::-webkit-color-swatch-wrapper {
+    @apply p-1 rounded-lg;
+  }
+
+  .color-input::-webkit-color-swatch {
+    @apply rounded-md border-none;
+  }
+
+  .form-container {
+    @apply p-6 bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 transition-colors duration-200;
+  }
+
+  .reset-button {
+    @apply px-6 py-2.5 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition duration-200 ease-in-out font-medium text-sm;
+  }
+
+  .file-input-wrapper {
+    @apply relative border border-gray-300 dark:border-gray-600 rounded-lg overflow-hidden;
+  }
+
+  .file-input {
+    @apply block w-full text-sm text-gray-700 dark:text-gray-200 
+    file:mr-4 file:py-2 file:px-4
+    file:rounded-none file:border-0
+    file:text-sm file:font-medium
+    file:bg-gray-100 file:dark:bg-gray-800 
+    file:text-gray-700 file:dark:text-gray-200
+    hover:file:bg-gray-200 hover:file:dark:bg-gray-700
+    file:border-r file:border-gray-300 dark:file:border-gray-600
+    transition duration-200 ease-in-out
+    p-0;
   }
 }
