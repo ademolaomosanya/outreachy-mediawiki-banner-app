@@ -1,12 +1,108 @@
-# React + Vite
+# 📌 MediaWiki Banner Creation Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Project Overview
+This project is a microtask for **T388234** - https://phabricator.wikimedia.org/T388248, focusing on setting up the infrastructure for a Frontend Web Application. The goal is to simplify the process of creating MediaWiki banners by providing an intuitive interface that allows users to define, preview, and generate banner code with minimal effort. The tool reduces the complexity of manually crafting banner syntax, making it more accessible for non-technical contributors.
 
-Currently, two official plugins are available:
+## 🔥 Features
+- **User-friendly Interface** – Easily customize banners with a contolled inputs.
+- **Live Preview** – See changes in real-time g.
+- **Accessibility Checks** – Ensures compliance with accessibility standards.
+- **Image Upload** – Upload images from your computer for use in banners.
+- **Default Image Support** – Select default images from online sources with proper attribution.
+- **Background Customization** – Change the background color of the banner to fit different themes.
+- **Text & Title Editing** – Modify text content and titles within the banner dynamically.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🎯 Why This Project?
+Creating banners in MediaWiki requires knowledge of templates and markup syntax, which can be a barrier for new contributors. This tool provides an efficient, user-friendly solution to lower that barrier and improve the workflow for wiki maintainers.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- **Frontend**: Vite + React
+- **Testing**: Vite Test
+- **Version Control**: Git
+- **Repository Hosting**: GitHub
+- **Styling**: Tailwind CSS
+
+## 📂 Project Structure
+```
+/public
+  vite.svg  # Static assets
+/src
+  /assets   # Images and other assets
+  /components  # Reusable UI components
+    Banner.jsx
+    Banner.test.jsx
+    BannerControls.jsx
+    BannerControls.test.jsx
+  /styles  # Global styles
+  App.jsx
+  App.test.jsx
+  main.jsx
+/tests
+  setupTests.js  # Test configuration
+```
+
+## 📖 Steps to Follow
+1. **Create a Frontend project** with support for Unit Testing.
+2. **Initialize Git** on the project and add the remote URL of the repository.
+3. **Commit the boilerplate code** following commit message guidelines used by developers in the foundation.
+4. **Push the initial commit** to the repository hosting service.
+5. **Design a page** with two main elements:
+   - A **full-width banner** describing something enjoyable.
+   - A **form with a control** that dynamically modifies one or more aspects of the banner:
+     - The background
+     - The text
+     - An image within the banner
+     - Any other element of the banner
+6. **Ensure changes are viewable without reloading the page.**
+7. **Commit and push UI changes.**
+8. **Document the project** thoroughly in the `README.md` file.
+9. **Request feedback** from mentors if needed.
+10. **Include the repository link** in the final Outreachy project application as a recorded contribution.
+
+## 📖 How to Use
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/ademolaomosanya/outreachy-mediawiki-banner-app.git
+   ```
+2. Navigate to the project folder  
+   ```bash
+   cd banner-app
+   ```
+3. Install dependencies  
+   ```bash
+   npm install
+   ```
+4. Run the development server  
+   ```bash
+   npm run dev
+   ```
+5. Open the tool in your browser at `http://localhost:5173`
+
+## 🚀 Deployment
+This project is deployed on **Vercel**, ensuring fast and seamless hosting.  
+- **Live Demo:** [[Link to deployed version](https://outreachy-mediawiki-banner-app-six.vercel.app/)]
+
+## 🖼 Screenshots
+
+### Banner Customization Page
+![Banner Customization](/public/Screenshot%202025-03-20%20at%2011.31.46.png)
+
+## 🎥 Demo
+![Live Preview Demo](/public/ScreenRecording2025-03-20at11.42.10-ezgif.com-video-to-gif-converter%20(1).gif)
+
+
+## 🏗 Contributing
+ To contribute:
+1. Fork the repo & create a new branch
+2. Make your changes
+3. Open a pull request
+
+I also make sure to follow Wikimedia's commit contribution guidelines. Please refer to https://www.mediawiki.org/wiki/Gerrit/Commit_message_guidelines for details.
+
+## 📜 License
+This project is licensed under the MIT License.
+
+##  Acknowledgments
+- **[Outreachy](https://www.outreachy.org/)** – Providing opportunities for open-source contributions.
+- **[MediaWiki](https://www.mediawiki.org/)** – The platform for which this tool is being developed.
