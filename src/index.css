@@ -118,4 +118,44 @@ button:focus-visible {
     transition duration-200 ease-in-out
     p-0;
   }
+
+  /* Focus styles for better keyboard navigation */
+  .form-input:focus, 
+  .color-input:focus, 
+  .file-input:focus,
+  .reset-button:focus {
+    @apply ring-2 ring-blue-500 ring-offset-2 outline-none;
+  }
+
+  /* High contrast focus styles for dark mode */
+  @media (prefers-color-scheme: dark) {
+    .form-input:focus, 
+    .color-input:focus, 
+    .file-input:focus,
+    .reset-button:focus {
+      @apply ring-blue-400 ring-offset-gray-900;
+    }
+  }
+
+  /* Screen reader only text */
+  .sr-only {
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+  }
+
+  /* Ensure sufficient color contrast */
+  .form-label {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+
+  .form-input::placeholder {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-input,
+  .reset-button,
+  .file-input {
+    @apply transition-none;
+  }
 }
