@@ -6,6 +6,7 @@ This project is a microtask for **T388234** - https://phabricator.wikimedia.org/
 ## 🔥 Features
 - **User-friendly Interface** – Easily customize banners with a contolled inputs.
 - **Live Preview** – See changes in real-time.
+- **Accessibility Checks** – Ensures compliance with accessibility standards.
 - **Image Upload** – Upload images from your computer for use in banners.
 - **Default Image Support** – Select default images from online sources with proper attribution.
 - **Background Customization** – Change the background color of the banner to fit different themes.
