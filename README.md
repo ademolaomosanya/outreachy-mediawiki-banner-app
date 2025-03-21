@@ -1,7 +1,7 @@
 # 📌 MediaWiki Banner Creation Tool
 
 ## 🚀 Project Overview
-This project is a microtask for **T388234** - https://phabricator.wikimedia.org/T388248, is a frontend project that supports unit testing, featuring a full-width banner with content about something I enjoy. It includes a form with a control that uses JavaScript to dynamically change the banner’s background, text, image, or other elements without reloading the page.
+This project is a microtask for **T388234** - https://phabricator.wikimedia.org/T388248, a frontend project built with Vite + React and Vite Test for testing, featuring a full-width banner with content about something I enjoy. It includes a form with a control that uses JavaScript to dynamically change the banner’s background, text, image, or other elements without reloading the page.
 
 ## 🔥 Features
 - **User-friendly Interface** – Easily customize banners with a contolled inputs.
@@ -35,7 +35,7 @@ This project is a microtask for **T388234** - https://phabricator.wikimedia.org/
 
 ## 🛠 Tech Stack
 - **Frontend**: Vite + React
-- **Testing**: Vite Test
+- **Testing**: Vitest
 - **Version Control**: Git
 - **Repository Hosting**: GitHub
 - **Styling**: Tailwind CSS
