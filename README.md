@@ -1,7 +1,7 @@
 # 📌 MediaWiki Banner Creation Tool
 
 ## 🚀 Project Overview
-This project is a microtask for **T388234** - https://phabricator.wikimedia.org/T388248, focusing on setting up the infrastructure for a Frontend Web Application. The goal is to simplify the process of creating MediaWiki banners by providing an intuitive interface that allows users to define, preview, and generate banner code with minimal effort. The tool reduces the complexity of manually crafting banner syntax, making it more accessible for non-technical contributors.
+This project is a microtask for **T388234** - https://phabricator.wikimedia.org/T388248, is a frontend project that supports unit testing, featuring a full-width banner with content about something I enjoy. It includes a form with a control that uses JavaScript to dynamically change the banner’s background, text, image, or other elements without reloading the page.
 
 ## 🔥 Features
 - **User-friendly Interface** – Easily customize banners with a contolled inputs.
@@ -13,8 +13,25 @@ This project is a microtask for **T388234** - https://phabricator.wikimedia.org/
 - **Text & Title Editing** – Modify text content and titles within the banner dynamically.
 
 
-## 🎯 Why This Project?
-Creating banners in MediaWiki requires knowledge of templates and markup syntax, which can be a barrier for new contributors. This tool provides an efficient, user-friendly solution to lower that barrier and improve the workflow for wiki maintainers.
+## 📖 How to Use
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/ademolaomosanya/outreachy-mediawiki-banner-app.git
+   ```
+2. Navigate to the project folder  
+   ```bash
+   cd banner-app
+   ```
+3. Install dependencies  
+   ```bash
+   npm install
+   ```
+4. Run the development server  
+   ```bash
+   npm run dev
+   ```
+5. Open the tool in your browser at `http://localhost:5173`
+
 
 ## 🛠 Tech Stack
 - **Frontend**: Vite + React
@@ -60,24 +77,7 @@ Creating banners in MediaWiki requires knowledge of templates and markup syntax,
 9. **Request feedback** from mentors if needed.
 10. **Include the repository link** in the final Outreachy project application as a recorded contribution.
 
-## 📖 How to Use
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/ademolaomosanya/outreachy-mediawiki-banner-app.git
-   ```
-2. Navigate to the project folder  
-   ```bash
-   cd banner-app
-   ```
-3. Install dependencies  
-   ```bash
-   npm install
-   ```
-4. Run the development server  
-   ```bash
-   npm run dev
-   ```
-5. Open the tool in your browser at `http://localhost:5173`
+
 
 ## 🚀 Deployment
 This project is deployed on **Vercel**, ensuring fast and seamless hosting.  
