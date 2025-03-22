@@ -59,7 +59,21 @@ This project is a microtask for **T388234** - https://phabricator.wikimedia.org/
   setupTests.js  # Test configuration
 ```
 
-## 📖 Steps to Follow
+
+
+## 🚀 Deployment
+This project is deployed on **Vercel**.  
+- **Live Demo:** [[Link to deployed version](https://outreachy-mediawiki-banner-app-six.vercel.app/)]
+
+## 🖼 Screenshots
+
+### Banner Customization Page
+![Banner Customization](/public/Screenshot%202025-03-20%20at%2011.31.46.png)
+
+## 🎥 Demo
+![Live Preview Demo](/public/ScreenRecording2025-03-20at11.42.10-ezgif.com-video-to-gif-converter%20(1).gif)
+
+## 📖 Task Requirement
 1. **Create a Frontend project** with support for Unit Testing.
 2. **Initialize Git** on the project and add the remote URL of the repository.
 3. **Commit the boilerplate code** following commit message guidelines used by developers in the foundation.
@@ -76,21 +90,6 @@ This project is a microtask for **T388234** - https://phabricator.wikimedia.org/
 8. **Document the project** thoroughly in the `README.md` file.
 9. **Request feedback** from mentors if needed.
 10. **Include the repository link** in the final Outreachy project application as a recorded contribution.
-
-
-
-## 🚀 Deployment
-This project is deployed on **Vercel**, ensuring fast and seamless hosting.  
-- **Live Demo:** [[Link to deployed version](https://outreachy-mediawiki-banner-app-six.vercel.app/)]
-
-## 🖼 Screenshots
-
-### Banner Customization Page
-![Banner Customization](/public/Screenshot%202025-03-20%20at%2011.31.46.png)
-
-## 🎥 Demo
-![Live Preview Demo](/public/ScreenRecording2025-03-20at11.42.10-ezgif.com-video-to-gif-converter%20(1).gif)
-
 
 ## 🏗 Contributing
  To contribute:
